@@ -1,19 +1,32 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Home from "../views/Home.vue";
+import Dashboard from "@/views/Dashboard.vue";
+import Backups from "@/views/Backups.vue";
+import Schedules from "@/views/Schedules.vue";
+import Settings from "@/views/Settings.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Home",
-    component: Home
+    name: "Dashboard",
+    component: Dashboard
   },
   {
-    path: "/about",
-    name: "About",
-    component: () => import("../views/About.vue")
+    path: "/backups",
+    name: "Backups",
+    component: Backups
+  },
+  {
+    path: "/schedules",
+    name: "Schedules",
+    component: Schedules
+  },
+  {
+    path: "/settings",
+    name: "Settings",
+    component: Settings
   }
 ];
 
