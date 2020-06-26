@@ -1,25 +1,33 @@
 <template>
-  <v-card>
-    <v-card-title>
-      <v-text-field
-        v-model="search"
-        label="Search"
-        single-line
-        hide-details
-      ></v-text-field>
-    </v-card-title>
-    <v-data-table
-      :headers="headers"
-      :items="backups"
-      :search="search"
-      show-select
-      dense
-      show-expand
-      multi-sort
-      :loading="loading"
-      :items-per-page.sync="sync"
-    ></v-data-table>
-  </v-card>
+  <div id="backups">
+    <v-card>
+      <v-card-title>
+        <v-text-field
+          v-model="search"
+          label="Search"
+          single-line
+          hide-details
+        ></v-text-field>
+      </v-card-title>
+      <v-data-table
+        :headers="headers"
+        :items="backups"
+        :search="search"
+        show-select
+        dense
+        show-expand
+        multi-sort
+        :loading="loading"
+      >
+        <template v-slot:expanded-item="{ headers, item }">
+          <td :colspan="headers.length">
+            {{ item }}
+          </td>
+        </template>
+      </v-data-table>
+      {{ test }}
+    </v-card>
+  </div>
 </template>
 
 <script>
@@ -29,7 +37,7 @@ export default {
   data() {
     return {
       search: "",
-      sync: "15",
+      test: this.$store.state.test,
       loading: true,
       headers: [
         {
