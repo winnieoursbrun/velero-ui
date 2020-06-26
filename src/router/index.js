@@ -1,32 +1,59 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
+import store from "@/store";
 import Dashboard from "@/views/Dashboard.vue";
 import Backups from "@/views/Backups.vue";
 import Schedules from "@/views/Schedules.vue";
 import Settings from "@/views/Settings.vue";
+import Login from "@/views/Login.vue";
 
 Vue.use(VueRouter);
+
+// const ifNotAuthenticated = (to, from, next) => {
+//   if (!store.getters["auth/isAuthenticated"]) {
+//     next("");
+//     return;
+//   }
+//   next("/");
+// };
+
+const ifAuthenticated = (to, from, next) => {
+  if (store.getters["auth/isAuthenticated"]) {
+    next();
+    return;
+  }
+  next("/login");
+};
 
 const routes = [
   {
     path: "/",
     name: "Dashboard",
-    component: Dashboard
+    component: Dashboard,
+    beforeEnter: ifAuthenticated
   },
   {
     path: "/backups",
     name: "Backups",
-    component: Backups
+    component: Backups,
+    beforeEnter: ifAuthenticated
   },
   {
     path: "/schedules",
     name: "Schedules",
-    component: Schedules
+    component: Schedules,
+    beforeEnter: ifAuthenticated
   },
   {
     path: "/settings",
     name: "Settings",
-    component: Settings
+    component: Settings,
+    beforeEnter: ifAuthenticated
+  },
+  {
+    path: "/login",
+    name: "Login",
+    component: Login
   }
 ];
 

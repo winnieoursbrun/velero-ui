@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <NavigationDrawer app />
-    <v-app-bar app>
+    <NavigationDrawer app v-if="isAuthenticated" />
+    <v-app-bar app v-if="isAuthenticated">
       <v-toolbar-title>{{ $route.name }}</v-toolbar-title>
     </v-app-bar>
     <v-content>
@@ -22,8 +22,8 @@
 </style>
 
 <script>
+import { mapGetters } from "vuex";
 import NavigationDrawer from "./components/NavigationDrawer";
-
 export default {
   name: "App",
 
@@ -31,8 +31,13 @@ export default {
     NavigationDrawer
   },
 
-  data: () => ({
-    //
-  })
+  computed: {
+    ...mapGetters({
+      isAuthenticated: "auth/isAuthenticated"
+    }),
+    isAuthenticated() {
+      return this.$store.getters["auth/isAuthenticated"];
+    }
+  }
 };
 </script>
