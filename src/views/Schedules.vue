@@ -12,7 +12,6 @@
       :headers="headers"
       :items="schedules"
       :search="search"
-      :item-key="name"
       show-select
     ></v-data-table>
   </v-card>
@@ -37,7 +36,8 @@ export default {
         { text: "phase", value: "phase" },
         { text: "lastBackup", value: "lastBackup" }
       ],
-      schedules: undefined
+      schedules: undefined,
+      search: ""
     };
   },
   methods: {
