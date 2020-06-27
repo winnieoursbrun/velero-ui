@@ -34,6 +34,7 @@ const actions = {
     });
   },
   logout({ commit }) {
+    console.log("test");
     localStorage.removeItem("user-token");
     delete axios.defaults.headers.common["Authorization"];
     commit("AUTH_LOGOUT");
