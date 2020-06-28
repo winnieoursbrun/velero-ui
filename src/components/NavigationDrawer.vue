@@ -1,25 +1,22 @@
 <template>
-  <v-navigation-drawer app :mini-variant.sync="mini" permanent dark>
-    <v-list-item class="px-2">
+  <v-navigation-drawer :app="app" :mini-variant.sync="mini" :dark="dark">
+    <v-list-item>
       <v-list-item-icon>
-        <v-img
-          alt="Velero Logo"
-          class="shrink mr-2"
-          contain
-          src="@/assets/velero-icon.svg"
-          transition="scale-transition"
-          width="50"
-        />
+        <v-icon color="success" v-if="status === 'success'">
+          mdi-zodiac-aquarius
+        </v-icon>
+        <v-icon color="info" v-else-if="status === 'loading'">
+          mdi-zodiac-aquarius
+        </v-icon>
+        <v-icon color="error" v-else-if="status === ''">
+          mdi-zodiac-aquarius
+        </v-icon>
+        <v-icon v-else>
+          mdi-zodiac-aquarius
+        </v-icon>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-img
-          alt="Velero Text"
-          class="shrink mr-2"
-          contain
-          src="@/assets/velero-text.svg"
-          transition="scale-transition"
-          width="200"
-        />
+        {{ title }}
       </v-list-item-content>
 
       <v-btn icon @click.stop="mini = !mini">
@@ -34,7 +31,6 @@
         <v-list-item-icon>
           <v-icon>{{ link.icon }}</v-icon>
         </v-list-item-icon>
-
         <v-list-item-content>
           <v-list-item-title>{{ link.title }}</v-list-item-title>
         </v-list-item-content>
@@ -42,22 +38,14 @@
     </v-list>
 
     <template v-slot:append>
-      <v-list-item>
+      <v-list-item @click="logoutFunction()" v-if="logoutFunction">
         <v-list-item-icon>
-          <v-icon color="success" v-if="status === 'success'">
-            mdi-checkbox-blank-circle
-          </v-icon>
-          <v-icon color="info" v-else-if="status === 'loading'">
-            mdi-checkbox-blank-circle
-          </v-icon>
-          <v-icon color="error" v-else-if="status === ''" hover>
-            mdi-checkbox-blank-circle
-          </v-icon>
+          <v-icon>mdi-logout-variant</v-icon>
         </v-list-item-icon>
-
         <v-list-item-content>
-          <v-btn v-on:click="logoutFunction" block>Logout</v-btn>
+          Logout
         </v-list-item-content>
+        <v-list-item-action> </v-list-item-action>
       </v-list-item>
     </template>
   </v-navigation-drawer>
@@ -72,10 +60,38 @@ export default {
     };
   },
   props: {
-    links: Array,
-    connected: Boolean,
-    logoutFunction: Function,
-    status: String
+    links: {
+      type: Array,
+      required: false,
+      default: function() {
+        return [];
+      }
+    },
+    app: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    dark: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    logoutFunction: {
+      type: Function,
+      required: false
+    },
+    status: {
+      type: String,
+      required: false,
+      validator: function(value) {
+        return ["success", "loading", ""].indexOf(value) !== -1;
+      }
+    },
+    title: {
+      type: String,
+      required: false
+    }
   }
 };
 </script>
