@@ -8,6 +8,9 @@
           single-line
           hide-details
         ></v-text-field>
+        <v-btn icon @click="getBackups()">
+          <v-icon>mdi-refresh</v-icon>
+        </v-btn>
       </v-card-title>
       <v-data-table
         :headers="headers"
@@ -25,67 +28,41 @@
           </td>
         </template>
       </v-data-table>
-      {{ test }}
     </v-card>
   </div>
 </template>
 
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "Home",
   components: {},
   data() {
     return {
       search: "",
-      test: this.$store.state.test,
-      loading: true,
       headers: [
         {
           text: "Name",
           align: "start",
           value: "name"
         },
-        { text: "Namespace", value: "namespace" },
         { text: "Ttl", value: "ttl" },
         { text: "VolumeSnapshotLocations", value: "volumeSnapshotLocations" },
         { text: "Errors", value: "errors" },
         { text: "creationTimestamp", value: "creationTimestamp" }
-      ],
-      backups: undefined
+      ]
     };
+  },
+  computed: {
+    ...mapGetters({
+      error: "backups/error",
+      loading: "backups/isLoading",
+      backups: "backups/backups"
+    })
   },
   methods: {
     getBackups: function() {
-      const baseURI = "/api/apis/velero.io/v1/namespaces/velero/backups";
-      this.loading = true;
-      this.$http
-        .get(baseURI)
-        .then(result => {
-          if (result.status == 200) {
-            this.backups = [];
-            result.data.items.forEach(item => {
-              let tmp = {};
-              tmp["id"] = item.metadata.uid;
-              tmp["name"] = item.metadata.name;
-              tmp["creationTimestamp"] = item.metadata.creationTimestamp;
-              tmp["namespace"] = item.metadata.namespace;
-              tmp["ttl"] = item.spec.ttl;
-              tmp["volumeSnapshotLocations"] =
-                item.spec.volumeSnapshotLocations[0];
-              tmp["errors"] = item.status.errors;
-              this.backups.push(tmp);
-            });
-            this.loading = false;
-          } else {
-            this.loading = false;
-            this.backups = undefined;
-          }
-        })
-        .catch(error => {
-          this.loading = false;
-          this.backups = undefined;
-          console.log(error);
-        });
+      this.$store.dispatch("backups/get");
     }
   },
   mounted() {
