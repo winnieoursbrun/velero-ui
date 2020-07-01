@@ -2,13 +2,28 @@
   <v-app>
     <NavigationDrawer
       app
+      dark
       v-if="isAuthenticated"
-      v-bind:links="links"
-      v-bind:connected="isAuthenticated"
-      v-bind:logoutFunction="logout"
-      v-bind:status="status"
+      :links="links"
+      :logoutFunction="logout"
+      :status="status"
+      :permanent="navBarVisible"
+      title="Velero"
     />
-    <v-app-bar app v-if="isAuthenticated">
+    <v-app-bar color="deep-purple accent-4" dark app v-if="isAuthenticated">
+      <v-app-bar-nav-icon
+        @click.stop="navBarVisible = !navBarVisible"
+        v-if="window.width <= 1264 && navBarVisible"
+      >
+        <v-icon>
+          mdi-close
+        </v-icon>
+      </v-app-bar-nav-icon>
+      <v-app-bar-nav-icon
+        @click.stop="navBarVisible = !navBarVisible"
+        v-if="window.width <= 1264 && !navBarVisible"
+      >
+      </v-app-bar-nav-icon>
       <v-toolbar-title>{{ $route.name }}</v-toolbar-title>
     </v-app-bar>
     <v-content>
@@ -46,7 +61,12 @@ export default {
         { title: "Schedules", icon: "mdi-clock-outline", route: "/schedules" },
         { title: "Settings", icon: "mdi-tune", route: "/settings" }
       ],
-      status: ""
+      status: "",
+      navBarVisible: false,
+      window: {
+        width: 0,
+        height: 0
+      }
     };
   },
   computed: {
@@ -78,10 +98,19 @@ export default {
           })
           .catch((this.status = ""));
       }, 60000);
+    },
+    handleResize() {
+      this.window.width = window.innerWidth;
+      this.window.height = window.innerHeight;
     }
   },
   created: function() {
     this.tryConnection();
+    window.addEventListener("resize", this.handleResize);
+    this.handleResize();
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.handleResize);
   }
 };
 </script>

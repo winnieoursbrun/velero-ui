@@ -1,5 +1,10 @@
 <template>
-  <v-navigation-drawer :app="app" :mini-variant.sync="mini" :dark="dark">
+  <v-navigation-drawer
+    :app="app"
+    :dark="dark"
+    :permanent="permanent"
+    :mini-variant.sync="mini"
+  >
     <v-list-item>
       <v-list-item-icon>
         <v-icon color="success" v-if="status === 'success'">
@@ -55,8 +60,8 @@
 export default {
   data() {
     return {
-      mini: true,
-      token: undefined
+      token: undefined,
+      mini: true
     };
   },
   props: {
@@ -73,6 +78,11 @@ export default {
       default: false
     },
     dark: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+    permanent: {
       type: Boolean,
       required: false,
       default: false
