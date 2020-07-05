@@ -23,20 +23,7 @@ const actions = {
       .get("/api/apis/velero.io/v1/namespaces/velero/backups")
       .then(result => {
         if (result.status == 200) {
-          // let newList = [];
           try {
-            // result.data.items.forEach(item => {
-            //   let tmp = {};
-            //   // tmp["id"] = item.metadata.uid;
-            //   // tmp["name"] = item.metadata.name;
-            //   // tmp["creationTimestamp"] = item.metadata.creationTimestamp;
-            //   // tmp["namespace"] = item.metadata.namespace;
-            //   // tmp["ttl"] = item.spec.ttl;
-            //   // tmp["volumeSnapshotLocations"] =
-            //   //   item.spec.volumeSnapshotLocations[0];
-            //   // tmp["errors"] = item.status.errors;
-            //   newList.push(tmp);
-            // });
             commit("BACKUPS_UPDATE", result.data.items);
           } catch (error) {
             commit("BACKUPS_ERROR", error);
@@ -84,10 +71,22 @@ const actions = {
       });
   },
   deleteBackups({ commit }, backups) {
-    console.log(backups);
     backups.forEach(backup => {
+      const data = {
+        apiVersion: "velero.io/v1",
+        kind: "DeleteBackupRequest",
+        metadata: {
+          generateName: "true"
+        },
+        spec: {
+          backupName: backup
+        }
+      };
       axios
-        .delete(`/api/apis/velero.io/v1/namespaces/velero/backups/${backup}`)
+        .post(
+          "/api/apis/velero.io/v1/namespaces/velero/deletebackuprequests",
+          data
+        )
         .then(result => {
           console.log(result);
         })
@@ -95,6 +94,36 @@ const actions = {
           commit("BACKUPS_ERROR", error);
         });
     });
+  },
+  createBackup({ commit }, form) {
+    console.log(form);
+
+    const data = {
+      apiVersion: "velero.io/v1",
+      kind: "Backup",
+      metadata: {
+        name: form.name
+      },
+      spec: {
+        includedNamespaces: form.includedNamespaces || ["*"],
+        storageLocation: form.backupStorageLocation,
+        ttl: form.ttl
+          ? Math.round(
+              Math.abs(new Date(form.ttl + " 00:00:00") - new Date()) / 36e5
+            ) + "h0m0s"
+          : "720h0m0s",
+        volumeSnapshotLocations: form.volumeSnapshotLocations
+      }
+    };
+    console.log(data);
+    axios
+      .post("/api/apis/velero.io/v1/namespaces/velero/backups", data)
+      .then(result => {
+        console.log(result);
+      })
+      .catch(error => {
+        commit("BACKUPS_ERROR", error);
+      });
   }
 };
 

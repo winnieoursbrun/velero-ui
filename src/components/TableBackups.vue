@@ -1,18 +1,80 @@
 <template>
   <div id="backups">
-    <TableBackups />
     <v-card>
-      <v-snackbar v-model="error" :timeout="3000" color="error" right>
-        {{ error }}
-      </v-snackbar>
-      <v-snackbar
-        v-model="alertEnabled"
-        :timeout="3000"
-        :color="AlertColor"
-        right
+      <v-card-title>
+        <v-text-field
+          v-model="search"
+          label="Search"
+          single-line
+          hide-details
+        ></v-text-field>
+        <FormBackup
+          :dialog="dialog"
+          :form="form"
+          persistent
+          max-width="800px"
+        />
+        <v-btn icon @click="getBackups()">
+          <v-icon>mdi-refresh</v-icon>
+        </v-btn>
+        <v-btn icon @click="deleteBackups(selectedItemsName)">
+          <v-icon>mdi-delete</v-icon>
+        </v-btn>
+        <v-menu :close-on-content-click="false" max-height="500px">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn icon v-bind="attrs" v-on="on">
+              <v-icon>mdi-dots-vertical</v-icon>
+            </v-btn>
+          </template>
+          <v-list subheader dense flat>
+            <v-list-item-group
+              v-model="settings"
+              multiple
+              v-on:change="updateRow()"
+            >
+              <template v-for="(value, index) in keysList">
+                <v-list-item :key="index" :value="value">
+                  <template v-slot:default="{ active, toggle }">
+                    <v-list-item-action>
+                      <v-checkbox
+                        :input-value="active"
+                        color="primary"
+                        @click="toggle"
+                      ></v-checkbox>
+                    </v-list-item-action>
+
+                    <v-list-item-content>
+                      <v-list-item-title v-text="value">{{
+                        index
+                      }}</v-list-item-title>
+                    </v-list-item-content>
+                  </template>
+                </v-list-item>
+              </template>
+            </v-list-item-group>
+          </v-list>
+        </v-menu>
+      </v-card-title>
+      <v-data-table
+        :headers="headers"
+        :items="backups"
+        :search="search"
+        show-select
+        dense
+        show-expand
+        multi-sort
+        :loading="loading"
+        :itemsPerPage="30"
+        itemKey="metadata.name"
+        v-on:input="selectedItems(selected)"
+        v-model="selected"
       >
-        {{ alertMsg }}
-      </v-snackbar>
+        <template v-slot:expanded-item="{ item }">
+          <td :colspan="headers.length">
+            <kbd>{{ item }}</kbd>
+          </td>
+        </template>
+      </v-data-table>
     </v-card>
   </div>
 </template>
@@ -21,12 +83,11 @@
 
 <script>
 import { mapGetters } from "vuex";
-import TableBackups from "@/components/TableBackups";
+import FormBackup from "@/components/FormBackup";
 
 export default {
-  name: "Backups",
   components: {
-    TableBackups
+    FormBackup
   },
   data() {
     return {
