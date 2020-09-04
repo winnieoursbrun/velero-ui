@@ -1,5 +1,7 @@
 # velero-ui
 
+![Backups Scrennshot](./content/backups.png)
+
 ## Project setup
 ```
 yarn install
@@ -7,6 +9,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
+docker-compose up -d
 yarn serve
 ```
 
@@ -29,6 +32,3 @@ yarn test:e2e
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
