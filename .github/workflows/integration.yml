@@ -29,4 +29,5 @@ jobs:
       - run: yarn
       - run: yarn lint
       - run: yarn test:unit
-      - run: yarn test:e2e
+      - name: Cypress run
+        uses: cypress-io/github-action@v2.2.7
