@@ -33,7 +33,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2.2.7
         with:
-          start: npm run serve
+          start: yarn serve
           wait-on: http://localhost:8080/
           config_file: cypress.json
           spec: "tests/e2e/**/*"
