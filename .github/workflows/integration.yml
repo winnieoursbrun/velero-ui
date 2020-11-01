@@ -35,10 +35,8 @@ jobs:
         with:
           start: yarn serve
           wait-on: http://localhost:8080/
-          config_file: cypress.json
-          spec: "tests/e2e/**/*"
-        env:
           record: true
+        env:
           CYPRESS_baseUrl: http://localhost:8080/
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
