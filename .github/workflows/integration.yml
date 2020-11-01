@@ -29,16 +29,19 @@ jobs:
       - run: yarn
       - run: yarn lint
       - run: yarn test:unit
+        
       - name: Cypress run
         uses: cypress-io/github-action@v2.2.7
+        with:
+          start: yarn test:e2e
+          working-directory: tests/e2e
       - uses: actions/upload-artifact@v1
         if: failure()
         with:
           name: cypress-screenshots
-          path: cypress/screenshots
-      # Test run video was always captured, so this action uses "always()" condition
+          path: tests/e2e/screenshots
       - uses: actions/upload-artifact@v1
         if: always()
         with:
           name: cypress-videos
-          path: cypress/videos
+          path: tests/e2e/videos
