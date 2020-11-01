@@ -22,7 +22,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
         
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v2.1.2
         with:
           node-version: 14
 
@@ -31,7 +31,7 @@ jobs:
       - run: yarn test:unit
         
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v2.2.7
         with:
           start: npm run serve
           wait-on: http://localhost:8080/
