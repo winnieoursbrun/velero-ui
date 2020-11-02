@@ -35,6 +35,10 @@ jobs:
         with:
           node-version: 14
       - run: yarn
+      - name: Setup Json-server
+        run : npm install -g json-server
+      - name: Run Json-server
+        run: cd json-server && json-server --watch db.js --routes routes.json -p 8081 -q &
       - name: Cypress run
         uses: cypress-io/github-action@v2.2.7
         with:
