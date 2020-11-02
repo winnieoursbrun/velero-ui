@@ -1,0 +1,38 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [{
+        "apiVersion": "velero.io/v1",
+        "kind": "VolumeSnapshotLocation",
+        "metadata": {
+            "annotations": {
+                "helm.sh/hook": "post-install,post-upgrade",
+                "helm.sh/hook-delete-policy": "before-hook-creation"
+            },
+            "creationTimestamp": "2020-09-18T17:00:07Z",
+            "generation": 1,
+            "labels": {
+                "app.kubernetes.io/instance": "velero",
+                "app.kubernetes.io/managed-by": "Helm",
+                "app.kubernetes.io/name": "velero",
+                "helm.sh/chart": "velero-2.12.17"
+            },
+            "name": "default",
+            "namespace": "velero",
+            "resourceVersion": "55556649",
+            "selfLink": "/apis/velero.io/v1/namespaces/velero/volumesnapshotlocations/default",
+            "uid": "b6764618-a7af-42ac-9122-6b1ebf2cdb44"
+        },
+        "spec": {
+            "config": {
+                "region": "eu-central-1"
+            },
+            "provider": "aws"
+        }
+    }],
+    "kind": "VolumeSnapshotLocationList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "71751590",
+        "selfLink": "/apis/velero.io/v1/namespaces/velero/volumesnapshotlocations"
+    }
+}

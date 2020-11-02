@@ -1,0 +1,1403 @@
+{
+    "kind": "NamespaceList",
+    "apiVersion": "v1",
+    "metadata": {
+        "selfLink": "/api/v1/namespaces",
+        "resourceVersion": "71751586"
+    },
+    "items": [{
+        "metadata": {
+            "name": "argocd",
+            "selfLink": "/api/v1/namespaces/argocd",
+            "uid": "5208ce5a-e8db-4381-a7fb-b939d5fae9c5",
+            "resourceVersion": "52643739",
+            "creationTimestamp": "2020-09-10T17:46:54Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "aru",
+            "selfLink": "/api/v1/namespaces/aru",
+            "uid": "0227384b-4401-4f33-9817-5b8fe0c4e060",
+            "resourceVersion": "898946",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.hPbafnUVghrhLDkcRORjnG85DNwdMV-gisbml_F3DYQ",
+                "name": "aru"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "b22fb50510efef548d0c8a1f90a39e1eca9b62d8",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"b22fb50510efef548d0c8a1f90a39e1eca9b62d8\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.hPbafnUVghrhLDkcRORjnG85DNwdMV-gisbml_F3DYQ\",\"name\":\"aru\"},\"name\":\"aru\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "auth-proxy",
+            "selfLink": "/api/v1/namespaces/auth-proxy",
+            "uid": "365a67c4-5713-4291-8c86-e8c5cc66146e",
+            "resourceVersion": "14352070",
+            "creationTimestamp": "2020-05-11T20:12:08Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.rs4QKlQOq6J2XOuhxJc6Vgmz58JDiNtoqv3dYWw1m3c",
+                "name": "auth-proxy"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "ea5763bdbdb2a229d2e510f4bb81c26507ca3633",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"ea5763bdbdb2a229d2e510f4bb81c26507ca3633\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.rs4QKlQOq6J2XOuhxJc6Vgmz58JDiNtoqv3dYWw1m3c\",\"name\":\"auth-proxy\"},\"name\":\"auth-proxy\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "cert-manager",
+            "selfLink": "/api/v1/namespaces/cert-manager",
+            "uid": "9a1a22f3-9732-4168-ab2f-8989db1963b1",
+            "resourceVersion": "898947",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.fR92i243KZffpf9kczzp5En7DFtqsuFxYszgmLeiaiM",
+                "name": "cert-manager"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "ba7669f511534a1a4d18554584c0864566b4ae21",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"ba7669f511534a1a4d18554584c0864566b4ae21\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.fR92i243KZffpf9kczzp5En7DFtqsuFxYszgmLeiaiM\",\"name\":\"cert-manager\"},\"name\":\"cert-manager\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "chart-museum",
+            "selfLink": "/api/v1/namespaces/chart-museum",
+            "uid": "f6a49b71-de13-4905-8810-88c8b2441f74",
+            "resourceVersion": "15146896",
+            "creationTimestamp": "2020-05-14T15:58:40Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.ahG6D6b0-ub6qyoO7Cijd97vA9c3fR4PpmTqsGR2PqM",
+                "name": "chart-museum"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "c52c2dc29869e7d8a5b93454ec36de10cab2ef98",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"c52c2dc29869e7d8a5b93454ec36de10cab2ef98\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.ahG6D6b0-ub6qyoO7Cijd97vA9c3fR4PpmTqsGR2PqM\",\"name\":\"chart-museum\"},\"name\":\"chart-museum\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "consul",
+            "selfLink": "/api/v1/namespaces/consul",
+            "uid": "df4475c4-7fe7-4f62-bd85-3c85d666455a",
+            "resourceVersion": "32787748",
+            "creationTimestamp": "2020-07-15T17:25:38Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.DYdM2zq_fPClFB_mqdZid4yD_9BoXIrMxv9hAdp6BU0",
+                "name": "consul"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "722ee12f938c4dda078a98c79d8831b818c88c63",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"722ee12f938c4dda078a98c79d8831b818c88c63\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.DYdM2zq_fPClFB_mqdZid4yD_9BoXIrMxv9hAdp6BU0\",\"name\":\"consul\"},\"name\":\"consul\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "csr",
+            "selfLink": "/api/v1/namespaces/csr",
+            "uid": "5d5cd4b7-4eee-48cf-98f0-52c6ff07c67d",
+            "resourceVersion": "16212423",
+            "creationTimestamp": "2020-05-18T12:42:58Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.4ha1LjtVv9I5biqFs-ZTgEjmInKDCtg3PH-ufNOoq8Q",
+                "name": "csr"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "e04be7bcc1315562aff7ddcc72ca95486e5ec7f3",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"e04be7bcc1315562aff7ddcc72ca95486e5ec7f3\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.4ha1LjtVv9I5biqFs-ZTgEjmInKDCtg3PH-ufNOoq8Q\",\"name\":\"csr\"},\"name\":\"csr\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "datadog",
+            "selfLink": "/api/v1/namespaces/datadog",
+            "uid": "c04602f0-2ded-461b-87ac-862a82e2441d",
+            "resourceVersion": "898950",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.p75Q4h8JIj21xq1n2Wz7HQnmFPstR6EBuU_EDCt_-1g",
+                "name": "datadog"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "64e3250f52aa52b22e187ecb2c237abd7c5168e4",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"64e3250f52aa52b22e187ecb2c237abd7c5168e4\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.p75Q4h8JIj21xq1n2Wz7HQnmFPstR6EBuU_EDCt_-1g\",\"name\":\"datadog\"},\"name\":\"datadog\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "default",
+            "selfLink": "/api/v1/namespaces/default",
+            "uid": "43947cfd-57e6-46f7-812b-31f9816f5c45",
+            "resourceVersion": "145",
+            "creationTimestamp": "2020-03-24T10:22:04Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "demo",
+            "selfLink": "/api/v1/namespaces/demo",
+            "uid": "4caf9ab7-9679-49eb-b764-ea817466f3d9",
+            "resourceVersion": "898953",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.avbimxI50qQu_gYiZvwLpGT9lCPUQ5F1b1gQ2wwOqaQ",
+                "name": "demo"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "8f28ab9472ae16d5aa135d90a9c8f93f8c5ddd20",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"8f28ab9472ae16d5aa135d90a9c8f93f8c5ddd20\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.avbimxI50qQu_gYiZvwLpGT9lCPUQ5F1b1gQ2wwOqaQ\",\"name\":\"demo\"},\"name\":\"demo\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "dex",
+            "selfLink": "/api/v1/namespaces/dex",
+            "uid": "9374d94f-696a-406b-9496-62d5545763a4",
+            "resourceVersion": "30762737",
+            "creationTimestamp": "2020-07-08T16:03:23Z",
+            "labels": {
+                "name": "dex"
+            },
+            "annotations": {
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{},\"labels\":{\"name\":\"dex\"},\"name\":\"dex\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "external-dns",
+            "selfLink": "/api/v1/namespaces/external-dns",
+            "uid": "b3debf03-227e-483c-9ba5-dd1a89e02864",
+            "resourceVersion": "898956",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.ZnnQpJEhWi6fy43y-kY7mq5-LNNi1oVzE8IaKjNH2_8",
+                "name": "external-dns"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "e3a6091d96af9e8e40ee217633ef745829f99556",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"e3a6091d96af9e8e40ee217633ef745829f99556\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.ZnnQpJEhWi6fy43y-kY7mq5-LNNi1oVzE8IaKjNH2_8\",\"name\":\"external-dns\"},\"name\":\"external-dns\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "fluentbit",
+            "selfLink": "/api/v1/namespaces/fluentbit",
+            "uid": "d5b628e2-5cf2-49c2-98b6-b602dd2a34d4",
+            "resourceVersion": "10566009",
+            "creationTimestamp": "2020-04-29T16:04:52Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.wUZhPD1fBsHZiUeHandwaPsXsUtRtjs2XMxgm8ZtNUo",
+                "name": "fluentbit"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "c366e10e10f8b7fab716243f409e5715c5708f43",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"c366e10e10f8b7fab716243f409e5715c5708f43\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.wUZhPD1fBsHZiUeHandwaPsXsUtRtjs2XMxgm8ZtNUo\",\"name\":\"fluentbit\"},\"name\":\"fluentbit\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "fluxcd",
+            "selfLink": "/api/v1/namespaces/fluxcd",
+            "uid": "72d3b553-0d87-48e2-a9d7-6681d604d386",
+            "resourceVersion": "560",
+            "creationTimestamp": "2020-03-24T10:25:16Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "gitlab",
+            "selfLink": "/api/v1/namespaces/gitlab",
+            "uid": "b4b44cf2-2f3e-4443-bdb1-0e47c2c2fa69",
+            "resourceVersion": "898960",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.9rp4Qlu0QH9jvVVc5N2HW27eU1QekiIO85dl_H-qqgE",
+                "name": "gitlab"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "01712368c1e537bf0209aa0165792d0c30e1fdf5",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"01712368c1e537bf0209aa0165792d0c30e1fdf5\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.9rp4Qlu0QH9jvVVc5N2HW27eU1QekiIO85dl_H-qqgE\",\"name\":\"gitlab\"},\"name\":\"gitlab\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "grafana",
+            "selfLink": "/api/v1/namespaces/grafana",
+            "uid": "9ffc7e56-932e-4761-a772-b5e29aae9438",
+            "resourceVersion": "64663246",
+            "creationTimestamp": "2020-10-13T14:09:09Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.eAMi48uZSeh4KSX1OEMr5hzIArvJqsztaV3SGfEf-Kk",
+                "name": "grafana"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "242262d81b87cfcdf1a0521638a4d93377540f5e",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"242262d81b87cfcdf1a0521638a4d93377540f5e\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.eAMi48uZSeh4KSX1OEMr5hzIArvJqsztaV3SGfEf-Kk\",\"name\":\"grafana\"},\"name\":\"grafana\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "integration",
+            "selfLink": "/api/v1/namespaces/integration",
+            "uid": "86910dea-6593-4657-897a-bc4a08fd2488",
+            "resourceVersion": "28399676",
+            "creationTimestamp": "2020-06-30T13:09:52Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.9ft3_I7-KPEAJzWQrduvw6Ej5UCPHbsLiafnV2RWQY4",
+                "name": "integration"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "82029b656f11a260130bc1f0ab8890fced49ed03",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"82029b656f11a260130bc1f0ab8890fced49ed03\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.9ft3_I7-KPEAJzWQrduvw6Ej5UCPHbsLiafnV2RWQY4\",\"name\":\"integration\"},\"name\":\"integration\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "integration-test",
+            "selfLink": "/api/v1/namespaces/integration-test",
+            "uid": "f08d4859-b8be-4d4a-b4e8-65df287f853f",
+            "resourceVersion": "28356722",
+            "creationTimestamp": "2020-06-30T09:33:57Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.MtDcr4eKT1dW-qjqi2-mZDgTkEFKY7kS_bGGPfXf818",
+                "name": "integration-test"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "38451d0d02113bdc53e4741a793de35e8b5f7b54",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"38451d0d02113bdc53e4741a793de35e8b5f7b54\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.MtDcr4eKT1dW-qjqi2-mZDgTkEFKY7kS_bGGPfXf818\",\"name\":\"integration-test\"},\"name\":\"integration-test\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "kube-node-lease",
+            "selfLink": "/api/v1/namespaces/kube-node-lease",
+            "uid": "0da46b80-d416-4966-bb7b-3f47a76e8fb8",
+            "resourceVersion": "33",
+            "creationTimestamp": "2020-03-24T10:22:02Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "kube-public",
+            "selfLink": "/api/v1/namespaces/kube-public",
+            "uid": "0d9abb55-bd0f-4a51-8c51-e58299342dfe",
+            "resourceVersion": "27",
+            "creationTimestamp": "2020-03-24T10:22:02Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "kube-system",
+            "selfLink": "/api/v1/namespaces/kube-system",
+            "uid": "37945c71-d46b-4232-a1e3-ea41c402648e",
+            "resourceVersion": "19",
+            "creationTimestamp": "2020-03-24T10:22:02Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "mailu",
+            "selfLink": "/api/v1/namespaces/mailu",
+            "uid": "5c6d62a9-d068-4045-83cd-eac768d65fb8",
+            "resourceVersion": "16157231",
+            "creationTimestamp": "2020-05-18T08:05:16Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "nexus",
+            "selfLink": "/api/v1/namespaces/nexus",
+            "uid": "001f6147-3f70-4f06-a4f7-fd5ec8413ee8",
+            "resourceVersion": "898969",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.N8KjS1VTgpmQsaWJniQcVU6ITHNjo2KLOvocjqOYVD4",
+                "name": "nexus"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "0619e0504cec5e88bfcd20d8d7cebd04242350fc",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"0619e0504cec5e88bfcd20d8d7cebd04242350fc\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.N8KjS1VTgpmQsaWJniQcVU6ITHNjo2KLOvocjqOYVD4\",\"name\":\"nexus\"},\"name\":\"nexus\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "nginx",
+            "selfLink": "/api/v1/namespaces/nginx",
+            "uid": "f6fe40e5-f46a-47b1-99ab-8466fe461c62",
+            "resourceVersion": "898973",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.FOBAORp5DIxlmfnNRqusdHu_LXKx1QIz9C2sAz_sja0",
+                "name": "nginx"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "2c413d8c42a45bd7fa47b9b1bdb4732cba358566",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"2c413d8c42a45bd7fa47b9b1bdb4732cba358566\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.FOBAORp5DIxlmfnNRqusdHu_LXKx1QIz9C2sAz_sja0\",\"name\":\"nginx\"},\"name\":\"nginx\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-1kbq6m",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-1kbq6m",
+            "uid": "b94436d5-f1aa-4439-b37b-f845b407b025",
+            "resourceVersion": "31011504",
+            "creationTimestamp": "2020-07-09T12:53:01Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-3dd703",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-3dd703",
+            "uid": "24d8d480-db87-467f-b2c0-3b51c49cc7ce",
+            "resourceVersion": "31021569",
+            "creationTimestamp": "2020-07-09T13:39:29Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-6gug3j",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-6gug3j",
+            "uid": "a1d504ee-b6b3-4b49-953c-b618311582cc",
+            "resourceVersion": "70495218",
+            "creationTimestamp": "2020-10-29T13:57:29Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-6llcx5",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-6llcx5",
+            "uid": "99c3a861-6117-4d3b-922a-2a386c6a6716",
+            "resourceVersion": "33240670",
+            "creationTimestamp": "2020-07-17T06:56:41Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-7kqpyj",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-7kqpyj",
+            "uid": "f5f96cd5-91e3-4431-a5b3-2468750e7433",
+            "resourceVersion": "34504430",
+            "creationTimestamp": "2020-07-21T14:30:00Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-94jszx",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-94jszx",
+            "uid": "e4edf3a8-e9bd-4cd1-b394-38753f36b0ec",
+            "resourceVersion": "31300998",
+            "creationTimestamp": "2020-07-10T13:08:20Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-bbrxax",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-bbrxax",
+            "uid": "99ec747c-d08d-43b2-9e32-398d8ed1a357",
+            "resourceVersion": "70492968",
+            "creationTimestamp": "2020-10-29T13:48:55Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-cejeeb",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-cejeeb",
+            "uid": "928d2052-9a04-4fad-b527-90641104080f",
+            "resourceVersion": "32993370",
+            "creationTimestamp": "2020-07-16T10:25:01Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-cqkvjz",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-cqkvjz",
+            "uid": "1b2f4c54-140a-48ca-8fe7-3b091c99de1b",
+            "resourceVersion": "32953963",
+            "creationTimestamp": "2020-07-16T07:13:28Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-e8gu1i",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-e8gu1i",
+            "uid": "55e98805-fcf5-4a90-adc3-512e1eeb2140",
+            "resourceVersion": "32974035",
+            "creationTimestamp": "2020-07-16T08:51:10Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-g4uxzc",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-g4uxzc",
+            "uid": "c957d2a7-31a4-4658-b177-d324d4e8263e",
+            "resourceVersion": "32768811",
+            "creationTimestamp": "2020-07-15T15:52:29Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-g866ix",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-g866ix",
+            "uid": "49777235-6e0f-4cf0-b338-17dc2f0d810c",
+            "resourceVersion": "30827754",
+            "creationTimestamp": "2020-07-08T21:19:12Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-gvrpoa",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-gvrpoa",
+            "uid": "363e05ce-ee5a-45a7-8b45-b594207ceebc",
+            "resourceVersion": "30731838",
+            "creationTimestamp": "2020-07-08T13:30:33Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-iaa8of",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-iaa8of",
+            "uid": "294c2368-8ea0-46ad-a59b-d58d44d8863f",
+            "resourceVersion": "34482026",
+            "creationTimestamp": "2020-07-21T12:40:26Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-ic5w45",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-ic5w45",
+            "uid": "839a2dc3-cab6-4525-a4fc-94ce80e381a8",
+            "resourceVersion": "70497692",
+            "creationTimestamp": "2020-10-29T14:06:43Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-ijg9ou",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-ijg9ou",
+            "uid": "86aaa15b-b094-46b1-97fc-e62cba5cdd55",
+            "resourceVersion": "34866183",
+            "creationTimestamp": "2020-07-22T19:58:31Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-j9pel2",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-j9pel2",
+            "uid": "44aa576e-83c5-484f-b46f-0b6bf8284346",
+            "resourceVersion": "36185825",
+            "creationTimestamp": "2020-07-27T11:43:32Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-m3of7p",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-m3of7p",
+            "uid": "3eed1786-316d-4b54-af6d-43968b17e44e",
+            "resourceVersion": "32667340",
+            "creationTimestamp": "2020-07-15T07:28:59Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-mwpjpf",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-mwpjpf",
+            "uid": "4ac1667c-ba43-4c6a-bd56-1a73c1213966",
+            "resourceVersion": "70495826",
+            "creationTimestamp": "2020-10-29T13:59:41Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-n6mhw2",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-n6mhw2",
+            "uid": "bcc77ef6-3fcb-4d15-ba70-5f8f830380a9",
+            "resourceVersion": "30765066",
+            "creationTimestamp": "2020-07-08T16:13:53Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-nkfmra",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-nkfmra",
+            "uid": "dee0fd8d-1ab9-4a57-b707-5289f249aec9",
+            "resourceVersion": "70569335",
+            "creationTimestamp": "2020-10-29T18:46:50Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-ob96jh",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-ob96jh",
+            "uid": "90b99216-efd0-4d79-ace2-fd010b259bc7",
+            "resourceVersion": "35179527",
+            "creationTimestamp": "2020-07-23T21:53:35Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-p36hhc",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-p36hhc",
+            "uid": "819e5b35-5b18-4d87-912c-a32b5a57a42f",
+            "resourceVersion": "34509919",
+            "creationTimestamp": "2020-07-21T14:56:37Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-qdt3fb",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-qdt3fb",
+            "uid": "1b9198c1-ae28-4080-b74b-e727853933d0",
+            "resourceVersion": "36227356",
+            "creationTimestamp": "2020-07-27T15:15:25Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-qjsrek",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-qjsrek",
+            "uid": "5b936652-7af7-4a3f-b8e8-24e9be1c1723",
+            "resourceVersion": "34890750",
+            "creationTimestamp": "2020-07-22T21:58:33Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-s0e7o4",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-s0e7o4",
+            "uid": "a5344db0-830e-4f11-bc3d-4440fd0755c7",
+            "resourceVersion": "70464447",
+            "creationTimestamp": "2020-10-29T11:57:27Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-scg85r",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-scg85r",
+            "uid": "e9a67ef1-4e9d-4f49-8f48-0c21c9cfb1b3",
+            "resourceVersion": "34888814",
+            "creationTimestamp": "2020-07-22T21:49:16Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-st4z1q",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-st4z1q",
+            "uid": "6de02098-de67-4f66-87c8-51e3f5b26989",
+            "resourceVersion": "44248279",
+            "creationTimestamp": "2020-08-18T21:04:44Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-integra-xmppm7",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-integra-xmppm7",
+            "uid": "9306ece8-c92b-488c-8df9-a8da2a364ef4",
+            "resourceVersion": "57368906",
+            "creationTimestamp": "2020-09-23T15:40:48Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-05rg4c",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-05rg4c",
+            "uid": "e13f614d-7862-4c0d-9caa-03574da9136f",
+            "resourceVersion": "64232938",
+            "creationTimestamp": "2020-10-12T10:01:01Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-2sjrx5",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-2sjrx5",
+            "uid": "f1a7fc05-da75-4680-b130-c08e28c61c2c",
+            "resourceVersion": "69343437",
+            "creationTimestamp": "2020-10-26T10:17:10Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-2ymus0",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-2ymus0",
+            "uid": "5db5c8c8-0685-4b97-a1ea-879a162f10c7",
+            "resourceVersion": "64332046",
+            "creationTimestamp": "2020-10-12T16:27:57Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-43ueoa",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-43ueoa",
+            "uid": "a5cccd19-e78d-458f-8ec3-60d4c57f65a9",
+            "resourceVersion": "70460617",
+            "creationTimestamp": "2020-10-29T11:42:33Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-503vcv",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-503vcv",
+            "uid": "ad824eba-2533-41b6-8b80-84648b397312",
+            "resourceVersion": "65695470",
+            "creationTimestamp": "2020-10-16T10:02:20Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-5irqp0",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-5irqp0",
+            "uid": "97e3e5ee-ec49-4dcf-9eee-07b271ab63bb",
+            "resourceVersion": "70491454",
+            "creationTimestamp": "2020-10-29T13:43:09Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-90m7wm",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-90m7wm",
+            "uid": "615ba45d-648d-4e02-8f7b-07d11ca64cda",
+            "resourceVersion": "62835421",
+            "creationTimestamp": "2020-10-08T14:14:51Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-bjxbnn",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-bjxbnn",
+            "uid": "b318855d-235a-483d-8c07-04bcb8ea573c",
+            "resourceVersion": "69359459",
+            "creationTimestamp": "2020-10-26T11:18:50Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-dvdvnu",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-dvdvnu",
+            "uid": "32311af2-a3f6-454d-84f9-47d243f8ca5d",
+            "resourceVersion": "63177862",
+            "creationTimestamp": "2020-10-09T12:40:25Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-e7drr3",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-e7drr3",
+            "uid": "cab15ae2-7195-4bf6-8de6-301ad44c51d9",
+            "resourceVersion": "67883163",
+            "creationTimestamp": "2020-10-22T10:04:22Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-f399ya",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-f399ya",
+            "uid": "a6c3900e-b22f-446b-93df-7063128bc4d1",
+            "resourceVersion": "64302789",
+            "creationTimestamp": "2020-10-12T14:33:58Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-f9c2ee",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-f9c2ee",
+            "uid": "a24739ea-b18f-4065-bffb-6695c1991549",
+            "resourceVersion": "62461832",
+            "creationTimestamp": "2020-10-07T13:44:16Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-h9ceff",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-h9ceff",
+            "uid": "0fc49828-f1d7-46b0-84eb-967c959530c5",
+            "resourceVersion": "68304461",
+            "creationTimestamp": "2020-10-23T13:48:24Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-l6dvfm",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-l6dvfm",
+            "uid": "0bddb4ff-eb7b-405c-83d6-c42aa243f569",
+            "resourceVersion": "70898074",
+            "creationTimestamp": "2020-10-30T16:25:41Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-m5n9ni",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-m5n9ni",
+            "uid": "4a7093ed-c292-47ce-8c1c-bfce75112371",
+            "resourceVersion": "64423369",
+            "creationTimestamp": "2020-10-12T22:27:12Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-n11o3i",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-n11o3i",
+            "uid": "65921b07-a2da-4f45-974d-180d0bfad0d4",
+            "resourceVersion": "67156396",
+            "creationTimestamp": "2020-10-20T10:17:35Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-ndy9hy",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-ndy9hy",
+            "uid": "278ef86c-28ae-454b-8709-8910f1f2f5b6",
+            "resourceVersion": "67205543",
+            "creationTimestamp": "2020-10-20T13:25:20Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-o2xcic",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-o2xcic",
+            "uid": "8c87fb5c-ee96-431c-9ac9-b844457b0b37",
+            "resourceVersion": "70781107",
+            "creationTimestamp": "2020-10-30T08:44:47Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-p2eghy",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-p2eghy",
+            "uid": "7d59c21d-111a-42b6-b457-03afdd89d584",
+            "resourceVersion": "64768607",
+            "creationTimestamp": "2020-10-13T21:02:36Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-pg4cw1",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-pg4cw1",
+            "uid": "efff451e-6493-45c8-9751-f37c023c220d",
+            "resourceVersion": "65680005",
+            "creationTimestamp": "2020-10-16T09:01:47Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-q7qta4",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-q7qta4",
+            "uid": "335aa087-71bb-435f-80a1-9700eae78168",
+            "resourceVersion": "64318082",
+            "creationTimestamp": "2020-10-12T15:33:48Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-ravnw5",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-ravnw5",
+            "uid": "19a2c108-87f5-4084-9bb5-0a36e7d3e081",
+            "resourceVersion": "68329686",
+            "creationTimestamp": "2020-10-23T15:27:22Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-rib9zf",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-rib9zf",
+            "uid": "9bb19304-d2aa-465f-92f8-5c357c740094",
+            "resourceVersion": "69344443",
+            "creationTimestamp": "2020-10-26T10:20:45Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-rkoaa7",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-rkoaa7",
+            "uid": "048e1fbe-74ab-436c-aa02-bbc3ec0c408f",
+            "resourceVersion": "63163228",
+            "creationTimestamp": "2020-10-09T11:43:14Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-tmx8f9",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-tmx8f9",
+            "uid": "c25f315f-7f0b-4bd9-8c7e-167bd715d89d",
+            "resourceVersion": "68302761",
+            "creationTimestamp": "2020-10-23T13:42:12Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "one2team-27-k8s-infra-slidebo-w2rag0",
+            "selfLink": "/api/v1/namespaces/one2team-27-k8s-infra-slidebo-w2rag0",
+            "uid": "193c90bc-3960-4fe4-9d53-98d1700e6f88",
+            "resourceVersion": "69344880",
+            "creationTimestamp": "2020-10-26T10:22:06Z"
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "prometheus",
+            "selfLink": "/api/v1/namespaces/prometheus",
+            "uid": "59ba7d02-3564-400b-bd44-2d06085e5ada",
+            "resourceVersion": "898976",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.eamPUXbnp2pX4A-ziPHlz8N802eKo_GoRGMZ3nX06Ro",
+                "name": "prometheus"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "a0563ece27138063ebaf5ed109c401e8e9dd01ad",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"a0563ece27138063ebaf5ed109c401e8e9dd01ad\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.eamPUXbnp2pX4A-ziPHlz8N802eKo_GoRGMZ3nX06Ro\",\"name\":\"prometheus\"},\"name\":\"prometheus\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "qa",
+            "selfLink": "/api/v1/namespaces/qa",
+            "uid": "2a203cfe-734e-47d5-9081-8541ccf70409",
+            "resourceVersion": "26708088",
+            "creationTimestamp": "2020-06-23T15:27:46Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.d05Qqfr-sH-hhiM_13jM50RnW6D7qO6v8OFRbtfTMnk",
+                "name": "qa"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "fb40dcc3e1884216df00deb32ac7f912988387e1",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"fb40dcc3e1884216df00deb32ac7f912988387e1\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.d05Qqfr-sH-hhiM_13jM50RnW6D7qO6v8OFRbtfTMnk\",\"name\":\"qa\"},\"name\":\"qa\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "rd-dashboard",
+            "selfLink": "/api/v1/namespaces/rd-dashboard",
+            "uid": "410a0cc0-26d5-4d51-aa62-ffdb8f6fc294",
+            "resourceVersion": "14059363",
+            "creationTimestamp": "2020-05-10T21:19:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.rdaaV6nNTpXWkt1ak2IgBUUpEj5bVi4WVuOQJq51yW4",
+                "name": "rd-dashboard"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "4c7f3bd7fcac141b709145e139c151c13c430cd3",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"4c7f3bd7fcac141b709145e139c151c13c430cd3\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.rdaaV6nNTpXWkt1ak2IgBUUpEj5bVi4WVuOQJq51yW4\",\"name\":\"rd-dashboard\"},\"name\":\"rd-dashboard\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "storybook",
+            "selfLink": "/api/v1/namespaces/storybook",
+            "uid": "2bd95f43-be82-4713-9e84-a3b383d13f74",
+            "resourceVersion": "898979",
+            "creationTimestamp": "2020-03-29T22:06:59Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.e2l0z4yA3bWRptIvQrJeVPi5L-3J5ZmHuZrbnhMqxbM",
+                "name": "storybook"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "db4bc39ba3e4086edc369e513d3a4d8be1ad1bf3",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"db4bc39ba3e4086edc369e513d3a4d8be1ad1bf3\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.e2l0z4yA3bWRptIvQrJeVPi5L-3J5ZmHuZrbnhMqxbM\",\"name\":\"storybook\"},\"name\":\"storybook\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "supdash",
+            "selfLink": "/api/v1/namespaces/supdash",
+            "uid": "931ef50e-1f2e-4a62-9b01-91ba0a852fb8",
+            "resourceVersion": "12122502",
+            "creationTimestamp": "2020-04-30T13:23:04Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.c9FsFBRRKRCamvLz8hdMuobkEzZE2km-uJbc2mr3u58",
+                "name": "supdash"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "77649114b09d13a954c4cdff0f1d09c6a3af1c65",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"77649114b09d13a954c4cdff0f1d09c6a3af1c65\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.c9FsFBRRKRCamvLz8hdMuobkEzZE2km-uJbc2mr3u58\",\"name\":\"supdash\"},\"name\":\"supdash\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "uchiwa",
+            "selfLink": "/api/v1/namespaces/uchiwa",
+            "uid": "790fec48-592c-4740-bd20-c0471b40930a",
+            "resourceVersion": "12135106",
+            "creationTimestamp": "2020-05-04T15:18:45Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.p5d-QE8TnNuS1NwmkogXtwx0hZjDtI6s8pmKB1L1Jc0",
+                "name": "uchiwa"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "500eb4e21a2feba538acf10252f47abb4cc2256d",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"500eb4e21a2feba538acf10252f47abb4cc2256d\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.p5d-QE8TnNuS1NwmkogXtwx0hZjDtI6s8pmKB1L1Jc0\",\"name\":\"uchiwa\"},\"name\":\"uchiwa\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }, {
+        "metadata": {
+            "name": "velero",
+            "selfLink": "/api/v1/namespaces/velero",
+            "uid": "02b035a8-8aa8-4c9f-8e2d-4687b3f79a47",
+            "resourceVersion": "15146898",
+            "creationTimestamp": "2020-05-13T14:09:12Z",
+            "labels": {
+                "fluxcd.io/sync-gc-mark": "sha256.glTygnsVpLi6hAYaU3w_ORiCMErw7FxDM-E0Mx0fAyc",
+                "name": "velero"
+            },
+            "annotations": {
+                "fluxcd.io/sync-checksum": "14f2502f0a3642b563d8a33e3d31eed2aad9f2fe",
+                "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"Namespace\",\"metadata\":{\"annotations\":{\"fluxcd.io/sync-checksum\":\"14f2502f0a3642b563d8a33e3d31eed2aad9f2fe\"},\"labels\":{\"fluxcd.io/sync-gc-mark\":\"sha256.glTygnsVpLi6hAYaU3w_ORiCMErw7FxDM-E0Mx0fAyc\",\"name\":\"velero\"},\"name\":\"velero\"}}\n"
+            }
+        },
+        "spec": {
+            "finalizers": ["kubernetes"]
+        },
+        "status": {
+            "phase": "Active"
+        }
+    }]
+}

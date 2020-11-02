@@ -1,0 +1,17 @@
+{
+    "apiVersion": "velero.io/v1",
+    "kind": "DeleteBackupRequest",
+    "metadata": {
+        "creationTimestamp": "2020-11-02T00:47:05Z",
+        "generateName": "true",
+        "generation": 1,
+        "name": "true8ff9r",
+        "namespace": "velero",
+        "resourceVersion": "71751961",
+        "selfLink": "/apis/velero.io/v1/namespaces/velero/deletebackuprequests/true8ff9r",
+        "uid": "7e9e69c2-888d-427d-9353-9befb04340ff"
+    },
+    "spec": {
+        "backupName": "everything-20201004155633"
+    }
+}

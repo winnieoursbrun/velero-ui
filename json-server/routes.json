@@ -1,0 +1,9 @@
+{
+    "/api/*": "/$1",
+    "/healthz/ping": "/ping",
+    "/apis/velero.io/v1/namespaces/velero/backups": "/backups",
+    "/apis/velero.io/v1/namespaces/velero/deletebackuprequests": "/deletebackuprequests",
+    "/api/v1/namespaces": "/namespaces",
+    "/apis/velero.io/v1/namespaces/velero/schedules": "/schedules",
+    "/apis/velero.io/v1/namespaces/velero/volumesnapshotlocations": "/volumesnapshotlocations"
+}

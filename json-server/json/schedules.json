@@ -1,0 +1,34 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [{
+        "apiVersion": "velero.io/v1",
+        "kind": "Schedule",
+        "metadata": {
+            "creationTimestamp": "2020-05-13T15:52:57Z",
+            "generation": 175,
+            "name": "everything",
+            "namespace": "velero",
+            "resourceVersion": "71618677",
+            "selfLink": "/apis/velero.io/v1/namespaces/velero/schedules/everything",
+            "uid": "7fdf1191-f6c8-4ab0-8c7f-272a6aefcdf4"
+        },
+        "spec": {
+            "schedule": "@every 24h",
+            "template": {
+                "hooks": {},
+                "includedNamespaces": ["*"],
+                "ttl": "720h0m0s"
+            }
+        },
+        "status": {
+            "lastBackup": "2020-11-01T15:59:02Z",
+            "phase": "Enabled"
+        }
+    }],
+    "kind": "ScheduleList",
+    "metadata": {
+        "continue": "",
+        "resourceVersion": "71753603",
+        "selfLink": "/apis/velero.io/v1/namespaces/velero/schedules"
+    }
+}
