@@ -42,7 +42,7 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2.9.10
         with:
-          start: yarn serve 2>/dev/null
+          start: yarn serve
           wait-on: http://localhost:8080/
           record: true
         env:
