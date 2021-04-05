@@ -40,7 +40,7 @@ jobs:
       - name: Run Json-server
         run: cd json-server && json-server --watch db.js --routes routes.json -p 8081 -q &
       - name: Cypress run
-        uses: cypress-io/github-action@v2.2.7
+        uses: cypress-io/github-action@v2.9.10
         with:
           start: yarn serve 2>/dev/null
           wait-on: http://localhost:8080/
