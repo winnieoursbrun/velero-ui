@@ -184,14 +184,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -215,10 +207,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -482,14 +471,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -513,10 +494,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -780,14 +758,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -811,10 +781,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -1078,14 +1045,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -1109,10 +1068,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -1376,14 +1332,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -1407,10 +1355,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -1674,14 +1619,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -1705,10 +1642,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -1972,14 +1906,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -2003,10 +1929,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -2270,14 +2193,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -2301,10 +2216,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -2568,14 +2480,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -2599,10 +2503,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -2866,14 +2767,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -2897,10 +2790,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"
@@ -3164,14 +3054,6 @@
         ],
         "parameters": [
           {
-            "name": "v1.DeleteOptions",
-            "in": "body",
-            "required": true,
-            "schema": {
-              "$ref": "#/definitions/v1.DeleteOptions"
-            }
-          },
-          {
             "name": "gracePeriodSeconds",
             "uniqueItems": true,
             "type": "integer",
@@ -3195,10 +3077,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
-            "schema": {
-              "$ref": "#/definitions/v1.Status"
-            }
+            "description": "OK"
           },
           "401": {
             "description": "Unauthorized"

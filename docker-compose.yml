@@ -6,5 +6,26 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - API_URL=https://API_URL
     ports:
       - 8081:80
+    networks:
+      - minikube
+  
+  minio:
+    image: minio/minio
+    environment:
+      - MINIO_ACCESS_KEY=minio
+      - MINIO_SECRET_KEY=minio123
+    ports:
+      - 9000:9000
+    volumes:
+      - /tmp/data:/data minio/minio
+    command: server /data
+    networks:
+      - minikube
+
+networks:
+  minikube:
+    external: true

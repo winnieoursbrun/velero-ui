@@ -1,0 +1,104 @@
+{
+    "apiVersion": "<string>",
+    "kind": "<string>",
+    "metadata": "<object>",
+    "status": {
+        "completionTimestamp": "<dateTime>",
+        "errors": "<integer>",
+        "expiration": "<dateTime>",
+        "phase": "<string>",
+        "startTimestamp": "<dateTime>",
+        "validationErrors": [
+            "<string>"
+        ],
+        "version": "<integer>",
+        "volumeSnapshotsAttempted": "<integer>",
+        "volumeSnapshotsCompleted": "<integer>",
+        "warnings": "<integer>"
+    },
+    "spec": {
+        "excludedNamespaces": [
+            "<string>"
+        ],
+        "excludedResources": [
+            "<string>"
+        ],
+        "includedNamespaces": [
+            "<string>"
+        ],
+        "includedResources": [
+            "<string>"
+        ],
+        "hooks": {
+            "resources": [
+                {
+                    "name": "<string>",
+                    "excludedNamespaces": [
+                        "<string>"                    
+                    ],
+                    "excludedResources": [
+                        "<string>"
+                    ],
+                    "includedNamespaces": [
+                        "<string>"
+                    ],
+                    "includedResources": [
+                        "<string>"
+                    ],
+                    "labelSelector": {
+                        "matchExpressions": [
+                            {
+                                "key": "<string>",
+                                "operator": "<string>",
+                                "values": [
+                                    "<string>",
+                                    "<string>"
+                                ]
+                            }
+                        ],
+                        "matchLabels": "<object>"
+                    },
+                    "post": [
+                        {
+                            "exec": {
+                                "command": [
+                                    "<string>"
+                                ],
+                                "container": "<string>",
+                                "onError": "<string>",
+                                "timeout": "<string>"
+                            }
+                        }
+                    ],
+                    "pre": [
+                        {
+                            "exec": {
+                                "command": [
+                                    "<string>"
+                                ],
+                                "container": "<string>",
+                                "onError": "<string>",
+                                "timeout": "<string>"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "labelSelector": {
+            "matchExpressions": [
+                {
+                    "key": "<string>",
+                    "operator": "<string>",
+                    "values": [
+                        "<string>",
+                        "<string>"
+                    ]
+                }
+            ],
+            "matchLabels": "<object>"
+        },
+        "includeClusterResources": "<boolean>",
+        "snapshotVolumes": "<boolean>"
+    }
+}

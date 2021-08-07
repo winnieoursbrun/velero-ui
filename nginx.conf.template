@@ -12,6 +12,6 @@ server {
     }
     location /api {
         rewrite /api/(.*) /$1  break;
-        proxy_pass https://BE77890893407A114DE6968F07282D62.sk1.eu-central-1.eks.amazonaws.com;
+        proxy_pass ${API_URL};
     }
 }
