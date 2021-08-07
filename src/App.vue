@@ -15,9 +15,7 @@
         @click.stop="navBarVisible = !navBarVisible"
         v-if="window.width <= 1264 && navBarVisible"
       >
-        <v-icon>
-          mdi-close
-        </v-icon>
+        <v-icon> mdi-close </v-icon>
       </v-app-bar-nav-icon>
       <v-app-bar-nav-icon
         @click.stop="navBarVisible = !navBarVisible"

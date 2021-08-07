@@ -66,12 +66,14 @@
         :loading="loading"
         :itemsPerPage="30"
         itemKey="metadata.name"
+        sort-by="metadata.creationTimestamp"
+        sort-desc="true"
         v-on:input="selectedItems(selected)"
         v-model="selected"
       >
         <template v-slot:expanded-item="{ item }">
           <td :colspan="headers.length">
-            <kbd>{{ item }}</kbd>
+            {{ item }}
           </td>
         </template>
       </v-data-table>
@@ -98,6 +100,7 @@ export default {
       alertColor: "",
       alertEnabled: false,
       selectedItemsName: [],
+      selected: undefined,
       form: {},
       settings: [
         "metadata.name",

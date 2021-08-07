@@ -16,9 +16,7 @@
         <v-icon color="error" v-else-if="status === ''">
           mdi-zodiac-aquarius
         </v-icon>
-        <v-icon v-else>
-          mdi-zodiac-aquarius
-        </v-icon>
+        <v-icon v-else> mdi-zodiac-aquarius </v-icon>
       </v-list-item-icon>
       <v-list-item-content>
         {{ title }}
@@ -47,9 +45,7 @@
         <v-list-item-icon>
           <v-icon>mdi-logout-variant</v-icon>
         </v-list-item-icon>
-        <v-list-item-content>
-          Logout
-        </v-list-item-content>
+        <v-list-item-content> Logout </v-list-item-content>
         <v-list-item-action> </v-list-item-action>
       </v-list-item>
     </template>

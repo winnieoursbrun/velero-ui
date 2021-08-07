@@ -1,19 +1,6 @@
 <template>
   <div id="backups">
     <TableBackups />
-    <v-card>
-      <v-snackbar v-model="error" :timeout="3000" color="error" right>
-        {{ error }}
-      </v-snackbar>
-      <v-snackbar
-        v-model="alertEnabled"
-        :timeout="3000"
-        :color="AlertColor"
-        right
-      >
-        {{ alertMsg }}
-      </v-snackbar>
-    </v-card>
   </div>
 </template>
 
@@ -27,26 +14,6 @@ export default {
   name: "Backups",
   components: {
     TableBackups
-  },
-  data() {
-    return {
-      search: "",
-      dialog: false,
-      menu2: false,
-      alertMsg: "",
-      alertColor: "",
-      alertEnabled: false,
-      selectedItemsName: [],
-      form: {},
-      settings: [
-        "metadata.name",
-        "spec.ttl",
-        "status.errors",
-        "status.phase",
-        "metadata.creationTimestamp"
-      ],
-      headers: []
-    };
   },
   computed: {
     ...mapGetters({
