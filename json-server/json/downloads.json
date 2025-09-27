@@ -1,0 +1,28 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+      {
+        "apiVersion": "velero.io/v1",
+        "kind": "Download",
+        "metadata": {
+          "creationTimestamp": "2020-10-04T15:56:33Z",
+          "name": "download-1",
+          "namespace": "velero"
+        },
+        "spec": {
+          "target": {
+            "kind": "Backup",
+            "name": "everything-20201004155633"
+          }
+        },
+        "status": {
+          "phase": "Completed"
+        }
+      }
+    ],
+    "kind": "DownloadList",
+    "metadata": {
+      "continue": "",
+      "resourceVersion": "71751586"
+    }
+  }

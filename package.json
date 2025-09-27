@@ -7,7 +7,9 @@
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:e2e": "vue-cli-service test:e2e",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "premock:api": "node json-server/generate-db.js",
+    "mock:api": "json-server json-server/db.json -p 8081"
   },
   "dependencies": {
     "@mdi/font": "~3.6.95",
@@ -33,13 +35,15 @@
     "eslint": "~6.7.2",
     "eslint-plugin-prettier": "~3.1.3",
     "eslint-plugin-vue": "~6.2.2",
+    "json-server": "^1.0.0-beta.3",
     "lint-staged": "~9.5.0",
     "prettier": "~1.19.1",
     "vue-cli-plugin-vuetify": "~2.0.5",
     "vue-template-compiler": "~2.6.11"
   },
   "resolutions": {
-    "cypress": "~5.5.0"
+    "cypress": "~5.5.0",
+    "vue-loader": "^15.11.1"
   },
   "vue": {
     "devServer": {

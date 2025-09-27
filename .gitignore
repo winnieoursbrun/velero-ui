@@ -14,6 +14,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.log
+
+# Mock data
+json-server/db.json
 
 # Editor directories and files
 .idea

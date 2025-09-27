@@ -1,0 +1,25 @@
+{
+    "apiVersion": "velero.io/v1",
+    "items": [
+      {
+        "apiVersion": "velero.io/v1",
+        "kind": "Restore",
+        "metadata": {
+          "creationTimestamp": "2020-10-04T15:56:33Z",
+          "name": "restore-1",
+          "namespace": "velero"
+        },
+        "spec": {
+          "backupName": "everything-20201004155633"
+        },
+        "status": {
+          "phase": "Completed"
+        }
+      }
+    ],
+    "kind": "RestoreList",
+    "metadata": {
+      "continue": "",
+      "resourceVersion": "71751586"
+    }
+  }
