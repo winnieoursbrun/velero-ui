@@ -15,7 +15,7 @@ export default {
     };
   },
   methods: {
-    fetchUsers: function() {
+    fetchUsers: function () {
       const baseURI = "/api/healthz/ping";
       this.$http
         .get(baseURI, {

@@ -2,11 +2,11 @@ FROM node:lts-alpine
 RUN npm install -g http-server
 WORKDIR /app
 
-COPY package*.json ./
-RUN npm install
+COPY package.json yarn.lock ./
+RUN CYPRESS_INSTALL_BINARY=0 yarn install --frozen-lockfile
 
 COPY . .
-RUN npm run build
+RUN yarn build
 
 EXPOSE 8080
 CMD [ "http-server", "dist" ]

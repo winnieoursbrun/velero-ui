@@ -8,9 +8,7 @@ describe("Login Page", () => {
   });
 
   it("Have a login button", () => {
-    cy.get(".v-btn")
-      .should("be.visible")
-      .should("contain", "Login");
+    cy.get(".v-btn").should("be.visible").should("contain", "Login");
   });
 
   it("Have a input for token", () => {

@@ -10,38 +10,51 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
-      - run: yarn
+          node-version: 20
+          cache: yarn
+      - run: yarn install --frozen-lockfile
       - run: yarn lint
 
   unit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
-      - run: yarn
+          node-version: 20
+          cache: yarn
+      - run: yarn install --frozen-lockfile
       - run: yarn test:unit
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
 
   e2e:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          node-version: 14
-      - run: yarn
-      - name: Setup Json-server
-        run : npm install -g json-server
-      - name: Run Json-server
-        run: cd json-server && json-server --watch db.js --routes routes.json -p 8081 -q &
+          node-version: 20
+          cache: yarn
+      - run: yarn install --frozen-lockfile
+      - name: Run the mock API
+        run: yarn mock:api -q &
       - name: Cypress run
-        uses: cypress-io/github-action@v2.9.10
+        uses: cypress-io/github-action@v6
         with:
+          install: false
           start: yarn serve
           wait-on: http://localhost:8080/
           record: true

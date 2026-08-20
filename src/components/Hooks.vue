@@ -22,11 +22,11 @@
 
           <v-tabs-items v-model="tab">
             <v-tab-item>
-              <DataTableCommand :item="(item.commands = [])" />
+              <DataTableCommand :item="item.commands = []" />
             </v-tab-item>
 
             <v-tab-item>
-              <DataTableCommand :item="(item.commands = [])" />
+              <DataTableCommand :item="item.commands = []" />
             </v-tab-item>
           </v-tabs-items>
         </v-card>

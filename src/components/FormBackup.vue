@@ -72,16 +72,16 @@ export default {
     })
   },
   methods: {
-    getNamespaces: function() {
+    getNamespaces: function () {
       this.$store.dispatch("namespaces/getNamespaces");
     },
-    getVolumeSnapshotLocation: function() {
+    getVolumeSnapshotLocation: function () {
       this.$store.dispatch("volumeSnapshotLocation/getVolumeSnapshotLocation");
     },
-    getBackupStorageLocation: function() {
+    getBackupStorageLocation: function () {
       this.$store.dispatch("backupStorageLocation/getBackupStorageLocation");
     },
-    createBackup: function(form) {
+    createBackup: function (form) {
       this.$store.dispatch("backups/createBackup", form);
       this.dialog = false;
       this.getBackups();

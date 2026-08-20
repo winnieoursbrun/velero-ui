@@ -64,7 +64,7 @@ export default {
     links: {
       type: Array,
       required: false,
-      default: function() {
+      default: function () {
         return [];
       }
     },
@@ -90,7 +90,7 @@ export default {
     status: {
       type: String,
       required: false,
-      validator: function(value) {
+      validator: function (value) {
         return ["success", "loading", ""].indexOf(value) !== -1;
       }
     },

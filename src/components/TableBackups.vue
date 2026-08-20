@@ -44,9 +44,7 @@
                     </v-list-item-action>
 
                     <v-list-item-content>
-                      <v-list-item-title v-text="value">{{
-                        index
-                      }}</v-list-item-title>
+                      <v-list-item-title>{{ value }}</v-list-item-title>
                     </v-list-item-content>
                   </template>
                 </v-list-item>
@@ -67,7 +65,7 @@
         :itemsPerPage="30"
         itemKey="metadata.name"
         sort-by="metadata.creationTimestamp"
-        sort-desc="true"
+        :sort-desc="true"
         v-on:input="selectedItems(selected)"
         v-model="selected"
       >
@@ -124,36 +122,36 @@ export default {
     })
   },
   methods: {
-    getBackups: function() {
+    getBackups: function () {
       this.$store.dispatch("backups/getBackups");
     },
-    getBackup: function(id) {
+    getBackup: function (id) {
       this.$store.dispatch("backups/getBackup", id);
     },
-    getNamespaces: function() {
+    getNamespaces: function () {
       this.$store.dispatch("namespaces/getNamespaces");
     },
-    getVolumeSnapshotLocation: function() {
+    getVolumeSnapshotLocation: function () {
       this.$store.dispatch("volumeSnapshotLocation/getVolumeSnapshotLocation");
     },
-    getBackupStorageLocation: function() {
+    getBackupStorageLocation: function () {
       this.$store.dispatch("backupStorageLocation/getBackupStorageLocation");
     },
-    deleteBackups: function(backups) {
+    deleteBackups: function (backups) {
       this.$store.dispatch("backups/deleteBackups", backups);
       this.getBackups();
     },
-    alert: function(msg, status) {
+    alert: function (msg, status) {
       this.alertMsg = msg;
       this.alertColor = status;
     },
-    createBackup: function(form) {
+    createBackup: function (form) {
       this.$store.dispatch("backups/createBackup", form);
       this.dialog = false;
       this.getBackups();
       this.alert("Backup newly created", "success");
     },
-    updateRow: function() {
+    updateRow: function () {
       this.headers = [];
       this.settings.sort().forEach((value, index) => {
         this.headers[index] = {
@@ -163,7 +161,7 @@ export default {
         };
       });
     },
-    selectedItems: function(items) {
+    selectedItems: function (items) {
       if (!items[0]) return;
       this.selectedItemsName = items.map(a => a.metadata.name);
     },

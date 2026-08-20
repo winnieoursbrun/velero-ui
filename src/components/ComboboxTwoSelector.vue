@@ -19,12 +19,9 @@
             :disabled="data.disabled"
             @click:close="data.parent.selectItem(data.item)"
           >
-            <v-avatar
-              class="accent white--text"
-              left
-              v-text="data.item.slice(0, 1).toUpperCase()"
-              v-if="avatar"
-            ></v-avatar>
+            <v-avatar class="accent white--text" left v-if="avatar">{{
+              data.item.slice(0, 1).toUpperCase()
+            }}</v-avatar>
             {{ data.item }}
           </v-chip>
         </template>
@@ -46,12 +43,9 @@
             :disabled="data.disabled"
             @click:close="data.parent.selectItem(data.item)"
           >
-            <v-avatar
-              class="accent white--text"
-              left
-              v-text="data.item.slice(0, 1).toUpperCase()"
-              v-if="avatar"
-            ></v-avatar>
+            <v-avatar class="accent white--text" left v-if="avatar">{{
+              data.item.slice(0, 1).toUpperCase()
+            }}</v-avatar>
             {{ data.item }}
           </v-chip>
         </template>
@@ -81,24 +75,24 @@ export default {
     selectedItems: {
       type: Array,
       required: false,
-      default: function() {
+      default: function () {
         return [];
       }
     },
     items: {
       type: Array,
       required: false,
-      default: function() {
+      default: function () {
         return [];
       }
     },
     labels: {
       type: Array,
       required: false,
-      default: function() {
+      default: function () {
         return ["FirstElement", "SecondElement"];
       },
-      validator: function(value) {
+      validator: function (value) {
         return value.length === 2;
       }
     }

@@ -1,4 +1,4 @@
-export const flattenObject = function(data) {
+export const flattenObject = function (data) {
   var result = {};
   function recurse(cur, prop) {
     if (Object(cur) !== cur) {

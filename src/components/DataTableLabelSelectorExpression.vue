@@ -8,18 +8,18 @@
       </v-toolbar>
     </template>
 
-    <template v-slot:item.key="props">
+    <template v-slot:[`item.key`]="props">
       <v-text-field v-model="props.item.key"></v-text-field>
     </template>
 
-    <template v-slot:item.operator="props">
+    <template v-slot:[`item.operator`]="props">
       <v-select
         v-model="props.item.operator"
         :items="['In', 'NotIn', 'Exists', 'DoesNotExist']"
       ></v-select>
     </template>
 
-    <template v-slot:item.values="props">
+    <template v-slot:[`item.values`]="props">
       <v-combobox
         v-model="props.item.values"
         multiple
@@ -29,7 +29,7 @@
       >
       </v-combobox>
     </template>
-    <template v-slot:item.actions="{ item }">
+    <template v-slot:[`item.actions`]="{ item }">
       <v-icon small @click="deleteItem(item)"> mdi-delete </v-icon>
     </template>
   </v-data-table>

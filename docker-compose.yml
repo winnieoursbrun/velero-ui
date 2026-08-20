@@ -1,5 +1,3 @@
-version: '3.4'
-
 services:
   veleroui:
     image: veleroui
@@ -21,7 +19,7 @@ services:
     ports:
       - 9000:9000
     volumes:
-      - /tmp/data:/data minio/minio
+      - /tmp/data:/data
     command: server /data
     networks:
       - minikube

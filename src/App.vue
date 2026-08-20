@@ -24,11 +24,11 @@
       </v-app-bar-nav-icon>
       <v-toolbar-title>{{ $route.name }}</v-toolbar-title>
     </v-app-bar>
-    <v-content>
+    <v-main>
       <v-container fluid>
         <router-view />
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -73,14 +73,14 @@ export default {
     })
   },
   methods: {
-    logout: function() {
+    logout: function () {
       this.$store.dispatch("auth/logout");
       this.$router.push("/login");
     },
-    login: function(token) {
+    login: function (token) {
       this.$store.dispatch("auth/login", token);
     },
-    tryConnection: function() {
+    tryConnection: function () {
       this.status = "loading";
       this.$store
         .dispatch("auth/tryConnection")
@@ -102,7 +102,7 @@ export default {
       this.window.height = window.innerHeight;
     }
   },
-  created: function() {
+  created: function () {
     this.tryConnection();
     window.addEventListener("resize", this.handleResize);
     this.handleResize();
