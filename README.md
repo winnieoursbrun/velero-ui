@@ -2,18 +2,28 @@
 
 ![Backups Scrennshot](./content/backups.png)
 
+## Requirements
+
+Node.js >= 16 (tested with Node 20 and 22) and yarn.
+
 ## Project setup
 ```
 yarn install
 ```
 
 ### Compiles and hot-reloads for development
+
+Start the mock API (json-server, port 8081) in one terminal:
 ```
-cd json-server
-json-server --watch db.js --routes routes.json -p 8081
-cd ..
+yarn mock:api
+```
+
+Then start the dev server (port 8080) in another one:
+```
 yarn serve
 ```
+
+The dev server proxies every `/api` call to the mock API.
 
 ### Run local cluster
 ```

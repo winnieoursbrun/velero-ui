@@ -71,7 +71,7 @@
       >
       <v-expansion-panel-header v-else>Hook</v-expansion-panel-header>
       <v-expansion-panel-content>
-        <Hooks :item="(hooks[0] = {})" />
+        <Hooks :item="hooks[0] = {}" />
       </v-expansion-panel-content>
     </v-expansion-panel>
   </v-expansion-panels>

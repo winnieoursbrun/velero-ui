@@ -14,10 +14,10 @@
         <v-btn color="primary" class="mb-2" @click="newRow()">New Row</v-btn>
       </v-toolbar>
     </template>
-    <template v-slot:item.command="props">
+    <template v-slot:[`item.command`]="props">
       <v-text-field name="Command" v-model="props.item.command"></v-text-field>
     </template>
-    <template v-slot:item.actions="{ item }">
+    <template v-slot:[`item.actions`]="{ item }">
       <v-icon small @click="deleteItem(item)"> mdi-delete </v-icon>
       <v-icon small @click="reOrder(item, -1)" :disabled="item == value[0]">
         mdi-arrow-up

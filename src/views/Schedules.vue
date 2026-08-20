@@ -41,7 +41,7 @@ export default {
     };
   },
   methods: {
-    getSchedules: function() {
+    getSchedules: function () {
       const baseURI = "/api/apis/velero.io/v1/namespaces/velero/schedules";
       this.$http
         .get(baseURI)
